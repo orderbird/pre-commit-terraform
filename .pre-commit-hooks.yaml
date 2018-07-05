@@ -6,6 +6,14 @@
   files: (\.tf|\.tfvars)$
   exclude: \.terraform\/.*$
 
+- id: terraform_validate
+  name: Terraform validate
+  description: Validates all Terraform configuration.
+  entry: terraform_validate.sh
+  language: script
+  files: (\.tf|\.tfvars)$
+  exclude: \.terraform\/.*$
+
 - id: terraform_validate_no_variables
   name: Terraform validate without variables
   description: Validates all Terraform configuration files without checking whether all required variables were set (basic check).
