@@ -14,10 +14,12 @@ Note that `terraform_validate_no_variables` and `terraform_validate_with_variabl
 An example `.pre-commit-config.yaml`:
 
 ```yaml
-- repo: git://github.com/antonbabenko/pre-commit-terraform
-  sha: v1.5.0
+- repo: git://github.com/orderbird/pre-commit-terraform
+  sha: v1.6.0
   hooks:
     - id: terraform_fmt
+    - id: terraform_validate
+
 ```
 
 Enjoy the clean code!
